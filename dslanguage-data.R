@@ -1,11 +1,3 @@
----
-title: "Intra-Branch Similarities of Indo-European Languages"
----
-
-
-```{r}
-#| echo: false
-
 library(tidyverse)
 library(primer.data)
 library(lubridate)
@@ -15,5 +7,16 @@ library(gapminder)
 library(fivethirtyeight)
 library(mstknnclust)
 library(gapminder)
+library(skimr)
 data("dslanguages")
-```
+
+dslanguages["IrishA", "IrishB"]
+
+celtic <- dslanguages |>
+  select(IrishA, IrishB, WelshN, WelshC, 
+         BretonList, BretonSE, BretonST)
+
+glimpse(dslanguages)
+
+celtic
+
