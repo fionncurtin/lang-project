@@ -1,19 +1,78 @@
 ---
-title: "Intra-Branch Similarities of Indo-European Languages"
+title: "Lexical similarities between different branches of Indo-European"
 ---
-
-
 ```{r}
 #| echo: false
+#| messages: false
+#| output: false
 
 library(tidyverse)
 library(primer.data)
 library(lubridate)
 library(skimr)
-library(nycflights13)
 library(gapminder)
-library(fivethirtyeight)
 library(mstknnclust)
 library(gapminder)
+library(skimr)
+library(stats)
+library(shiny)
+library(ggplot2)
+library(plotly)
+library(graphics)
+library(gplots)
+library(plot.matrix)
+library(corrplot)
 data("dslanguages")
 ```
+
+
+```{r}
+#| echo: false
+#| messages: false
+
+
+celtic <- dslanguages |>
+  select(IrishA, IrishB, WelshN, WelshC, 
+         BretonList, BretonSE, BretonST)
+
+romance <- dslanguages |>
+  select(RumanianList:Catalan)
+
+
+germanic <- dslanguages |>
+  select(GermanST:Takitaki)
+
+
+balto_slavic <- dslanguages |>
+  select(Latvian:Serbocroatian)
+
+indic <- dslanguages |>
+select(GypsyGk:Khaskura)
+
+
+greek <- dslanguages |>
+  select(GreekML:GreekK)
+
+armenian <- dslanguages |>
+  select(ArmenianMod:ArmenianList)
+
+iranic <- dslanguages |>
+  select(Ossetic:Wakhi)
+
+albanian <- dslanguages |>
+  select(AlbanianT:AlbanianC)
+
+branch <- list(celtic, romance, germanic, balto_slavic, indic,
+               greek, armenian, iranic, albanian)
+
+row_sums <- lapply(branch, rowSums)
+row_sums_matrix <- do.call(cbind, row_sums)
+M <- cor(row_sums_matrix)
+colnames(M) <- rownames(M) <- c("Celtic", "Romance", 
+                                "Germanic", "Balto-Slavic", "Indic",
+                                "Greek", "Armenian", "Iranic", "Albanian")
+corrplot(M, method = 'color', is.corr = FALSE)
+
+
+```
+Source: Dyen, I., Kruskal, J., and Black, P. (1992). An indoeuropean classification: A lexicostatistical experiment. Transactions of the American Philosophical Society. 82, (5).

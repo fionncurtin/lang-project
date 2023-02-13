@@ -14,7 +14,7 @@ dslanguages["IrishA", "IrishB"]
 
 celtic <- dslanguages |>
   select(IrishA, IrishB, WelshN, WelshC, 
-         BretonList, BretonSE, BretonST)
+         BretonList, BretonSE, BretonST) 
 
 
 
