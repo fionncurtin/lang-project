@@ -1,13 +1,5 @@
 library(tidyverse)
-library(primer.data)
-library(lubridate)
-library(skimr)
-library(nycflights13)
-library(gapminder)
-library(fivethirtyeight)
 library(mstknnclust)
-library(gapminder)
-library(skimr)
 data("dslanguages")
 
 celtic <- dslanguages |>
