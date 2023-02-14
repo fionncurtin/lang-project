@@ -76,3 +76,6 @@ corrplot(M, method = 'color', is.corr = FALSE)
 
 ```
 Source: Dyen, I., Kruskal, J., and Black, P. (1992). An indoeuropean classification: A lexicostatistical experiment. Transactions of the American Philosophical Society. 82, (5).
+
+
+This matrix shows the lexical similarities between different branches of Indo-European. The data is taken from fron Dyen and Black 1992's matrix of lexical distance between Indo-European languages.  My chart groups those languages according to branches and calculates the similarities between different those larger groupings. European branches are generally similar to each other and dissimilar to Asian branches, even though they are not always more closely related.

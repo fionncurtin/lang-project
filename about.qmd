@@ -2,8 +2,20 @@
 title: "About"
 ---
 
-About this site
+## About this Project:
+This project compares the lexical similarities between different branches of
+the Indo-Euroepean language family, the largest such family in the world.
 
-```{r}
-1 + 1
-```
+This does not mean categorizing branches are in a genetic sense, as linguists typically do, but instead just looking at how similar the Swdesh (universal)
+words are between the different branches.
+
+## About Me:
+I am a novice data scientist working with R to 
+apply statistics to the humanities. You can reach me at 
+dermot.curtin1010@gmail.com and find my code here:  
+https://github.com/fionncurtin/lang-project
+https://github.com/fionncurtin
+
+## Check out
+[Kane's Free Data Science Bootcamp](https://bootcamp.davidkane.info/), where
+I acquired the skills to make this project.

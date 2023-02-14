@@ -4,13 +4,27 @@
     "href": "index.html",
     "title": "Lexical similarities between different branches of Indo-European",
     "section": "",
-    "text": "Source: Dyen, I., Kruskal, J., and Black, P. (1992). An indoeuropean classification: A lexicostatistical experiment. Transactions of the American Philosophical Society. 82, (5)."
+    "text": "Source: Dyen, I., Kruskal, J., and Black, P. (1992). An indoeuropean classification: A lexicostatistical experiment. Transactions of the American Philosophical Society. 82, (5).\nThis matrix shows the lexical similarities between different branches of Indo-European. The data is taken from fron Dyen and Black 1992’s matrix of lexical distance between Indo-European languages. My chart groups those languages according to branches and calculates the similarities between different those larger groupings. European branches are generally similar to each other and dissimilar to Asian branches, even though they are not always more closely related."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "This project compares the lexical similarities between different branches of the Indo-Euroepean language family, the largest such family in the world.\nThis does not mean categorizing branches are in a genetic sense, as linguists typically do, but instead just looking at how similar the Swdesh (universal) words are between the different branches."
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About",
+    "section": "About Me:",
+    "text": "About Me:\nI am a novice data scientist working with R to apply statistics to the humanities. You can reach me at dermot.curtin1010@gmail.com and find my code here:\nhttps://github.com/fionncurtin/lang-project https://github.com/fionncurtin"
+  },
+  {
+    "objectID": "about.html#check-out",
+    "href": "about.html#check-out",
+    "title": "About",
+    "section": "Check out",
+    "text": "Check out\nKane’s Free Data Science Bootcamp, where I acquired the skills to make this project."
   }
 ]
