@@ -20,6 +20,7 @@ data("dslanguages")
 #| echo: false
 #| messages: false
 
+##First I grouped the languages according to branches, as my goal is to compare the different branches.
 romance <- dslanguages |>
   select(RumanianList:Catalan)
 
@@ -27,6 +28,7 @@ romance <- dslanguages |>
 germanic <- dslanguages |>
   select(GermanST:Takitaki)
 
+##This sets the data up for the matrix and then gives the languages more modern names (the data is from 1992)
 ger_rom <- cor(germanic, romance)
 colnames(ger_rom) <- c("Romanian", "Vlach", "Italian", "Ladin", "Provencal", "Walloon", "French",  "French Creole (Alleyne)", "French Creole (Taylor)" , "Sardinian (Nuorese)", "Sardinian (Logudorese)", "Sardinian (Cagliari)", "Spanish", "Portuguese", "Portuguese (Brazil)", "Catalan")
 rownames(ger_rom) <- c("German", "Pennsylvania Dutch", "Dutch",
@@ -35,9 +37,12 @@ rownames(ger_rom) <- c("German", "Pennsylvania Dutch", "Dutch",
                        "Swedish (Karre et al.)", "Danish", 
                        "Riksmal", "Icelandic", "Faroese", "English",
                        "Surinamese English Creole")
+
+##This actually creates to the plot.  is.corr MUST equal FALSE to get the coloring right.
 corrplot(ger_rom, method = 'color', is.corr = FALSE)
 ```
-You can see from the bar on the right that there is much less variation between these two branches than there was between all of the branches on the first graph.  I was surprised that English wasn't especially similar to French (everyone's seen a Youtube video about the Norman influence on the English language by now). The two French creole languages are actually only one language, Dominican creole (from the island of Dominica, not the Dominican Republic) which are represented by two different word sets taken from two different authors; that the two are basically identical is good proof that I haven't messed anything up.  The dialects of Sardinian match less than I would have expected, while the creole languages (formed from a mix of several languages in colonial settings) have close affinities with everything.
+
+You can see from the bar on the right that there is much less variation between these two branches than there was between all of the branches on the first graph. I was surprised that English wasn't especially similar to French (everyone's seen a Youtube video about the Norman influence on the English language by now). The two French creole languages are actually only one language, Dominican creole (from the island of Dominica, not the Dominican Republic) which are represented by two different word sets taken from two different authors; that the two are basically identical is good proof that I haven't messed anything up. The dialects of Sardinian match less than I would have expected, while the creole languages (formed from a mix of several languages in colonial settings) have close affinities with everything.
 
 Icelandic, which has changed little since the days of the sagas, has borrowed relatively little from the Latin-derived tongues.
 

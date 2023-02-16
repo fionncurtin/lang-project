@@ -17,6 +17,7 @@ data("dslanguages")
 ```{r}
 #| echo: false
 
+##First I grouped the languages according to branches, as my goal is to compare the different branches.
 celtic <- dslanguages |>
   select(IrishA, IrishB, WelshN, WelshC, 
          BretonList, BretonSE, BretonST)
@@ -24,6 +25,7 @@ celtic <- dslanguages |>
 indic <- dslanguages |>
 select(GypsyGk:Khaskura)
 
+##This sets the data up for the matrix and then gives the languages more modern names (the data is from 1992)
 celt_ind <- cor(celtic, indic)
 colnames(celt_ind) <- c("Romani (South Balkans)", "Sinhala",
                        "Kashmiri", "Marathi", "Gujarati", 
@@ -35,6 +37,8 @@ rownames(celt_ind) <- c("Irish (Dillon)", "Irish (Lane)",
                         "Breton (Vallée)", 
                         "Breton (Vannes dialect)", 
                         "Breton (Standard)")
+
+##This actually creates to the plot.  is.corr MUST equal FALSE to get the coloring right.
 corrplot(celt_ind, method = 'color', is.corr = FALSE)
 ```
 

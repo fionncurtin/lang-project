@@ -11,7 +11,7 @@ words (universal words like "face" and "water") are between the different
 branches. Close cultural contact between the European languages has led them to have a relative affinity for each other; Greek is as closely related to to Indic languages like Hindi as it is to Germanic languages like English, but borrowing has led the two languages to share much more vocabulary. The same can be said of Albanian and Balto-Slavic (Albanian-speaking lands in Europe are surrounded on three sides by Slavic-speaking countries), but its intriguing dissimilarity to the other European languages suggests a degree of cultural isolation.
 If two languages are equidistant in phylogenetic sense then the lexical similarity between them will be mediated by cultural contact.
 
-The interbranch comparison on the home page came out well, but some of the more granular comparisons I made suffered from range restriction. The closer the branches or languages are the more sampling errors will skew the results.
+The interbranch matrix on the home page came out well, but some of the more granular comparisons I made suffered from range restriction. The closer the branches or languages are the more sampling errors will skew the results.  I didn't upload a chart comparing all 82 languages to each other because it would have nearly 7,000 individual squares, rendering the matrix totally unreadable.
 
 ## About Me:
 My name is Dermot Curtin and I am a novice programmer working with R to 
