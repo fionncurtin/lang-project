@@ -34,7 +34,7 @@ rownames(celt_ind) <- c("Irish (Dillon)", "Irish (Lane)",
                         "Welsh (Carmarthen dialect)", 
                         "Breton (Vallée)", 
                         "Breton (Vannes dialect)", 
-                        "Breton (Standard")
+                        "Breton (Standard)")
 corrplot(celt_ind, method = 'color', is.corr = FALSE)
 ```
 
