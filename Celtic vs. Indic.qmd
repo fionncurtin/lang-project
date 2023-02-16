@@ -1,0 +1,43 @@
+---
+title: "Celtic vs. Indic"
+editor: visual
+---
+
+```{r}
+#| echo: false
+#| messages: false
+#| output: false
+
+library(tidyverse)
+library(mstknnclust)
+library(corrplot)
+data("dslanguages")
+```
+
+```{r}
+#| echo: false
+
+celtic <- dslanguages |>
+  select(IrishA, IrishB, WelshN, WelshC, 
+         BretonList, BretonSE, BretonST)
+
+indic <- dslanguages |>
+select(GypsyGk:Khaskura)
+
+celt_ind <- cor(celtic, indic)
+colnames(celt_ind) <- c("Romani (South Balkans)", "Sinhala",
+                       "Kashmiri", "Marathi", "Gujarati", 
+                       "Punjabi", "Lahnda", "Hindi", "Bengali",
+                       "Nepali (Turner)", "Nepali (Money)")
+rownames(celt_ind) <- c("Irish (Dillon)", "Irish (Lane)", 
+                        "Welsh (Northern dialect)", 
+                        "Welsh (Carmarthen dialect)", 
+                        "Breton (Vallée)", 
+                        "Breton (Vannes dialect)", 
+                        "Breton (Standard")
+corrplot(celt_ind, method = 'color', is.corr = FALSE)
+```
+
+I wanted to compare Celtic and Indic because they are the two most distant branches, at least in geographic terms.  The results are pretty strange; I would have expected a relatively close affinity between Romani and any group of European languages because, although Indic, it has been spoken in Europe by the Romani people for centuries.  But why the strong links across the board to one Nepali wordset but not the other?  The restriction in range to a fairly narrow window of mild dissimilarity might render the data less useful.
+
+Note that when a language is followed by a surname it is in reference to a specific wordset, typically to distinguish it from a different wordset of the same language. The wordsets may be from the same dialect or different dialects.

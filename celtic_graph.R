@@ -1,6 +1,7 @@
 library(tidyverse)
 library(mstknnclust)
 library(corrplot)
+library(ggplot2)
 data("dslanguages")
 
 
@@ -13,4 +14,4 @@ colnames(M) <- rownames(M) <- c("Celtic", "Romance",
                                 "Greek", "Armenian", "Iranic", "Albanian")
 x <- corrplot(M, method = 'color', is.corr = FALSE)
 
-write_rds(x, "x.rds")
+

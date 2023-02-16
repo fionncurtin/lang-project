@@ -7,7 +7,11 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - Germanic vs. Romance.qmd
+      - Celtic vs. Indic.qmd
+      - Balto-Slavic.qmd
       - about.qmd
+      - Source.qmd
 
 format:
   html:

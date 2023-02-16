@@ -4,17 +4,20 @@ title: "About"
 
 ## About this Project:
 This project compares the lexical similarities between different branches of
-the Indo-Euroepean language family, the largest such family in the world.
+the Indo-European language family, the largest such family in the world.
 
-This does not mean categorizing branches are in a genetic sense, as linguists typically do, but instead just looking at how similar the Swdesh (universal)
-words are between the different branches.
+This does not mean categorizing branches in a genetic sense, which linguist are typically most interested in, but instead looking at how similar the Swadesh 
+words (universal words like "face" and "water") are between the different 
+branches. Close cultural contact between the European languages has led them to have a relative affinity for each other; Greek is as closely related to to Indic languages like Hindi as it is to Germanic languages like English, but borrowing has led the two languages to share much more vocabulary. The same can be said of Albanian and Balto-Slavic (Albanian-speaking lands in Europe are surrounded on three sides by Slavic-speaking countries), but its intriguing dissimilarity to the other European languages suggests a degree of cultural isolation.
+If two languages are equidistant in phylogenetic sense then the lexical similarity between them will be mediated by cultural contact.
+
+The interbranch comparison on the home page came out well, but some of the more granular comparisons I made suffered from range restriction. The closer the branches or languages are the more sampling errors will skew the results.
 
 ## About Me:
-I am a novice data scientist working with R to 
-apply statistics to the humanities. You can reach me at 
+My name is Dermot Curtin and I am a novice programmer working with R to 
+apply data science to the humanities. You can reach me at 
 dermot.curtin1010@gmail.com and find my code here:  
 https://github.com/fionncurtin/lang-project
-https://github.com/fionncurtin
 
 ## Check out
 [Kane's Free Data Science Bootcamp](https://bootcamp.davidkane.info/), where

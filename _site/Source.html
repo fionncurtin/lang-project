@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Indo-European Similarities Project - Lexical Similarities Between Different Branches of Indo-European</title>
+<title>Indo-European Similarities Project - Sources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
+    <a class="nav-link" href="./index.html">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -100,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Source.html">
+    <a class="nav-link active" href="./Source.html" aria-current="page">
  <span class="menu-text">Sources</span></a>
   </li>  
 </ul>
@@ -114,14 +114,21 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#source-of-data" id="toc-source-of-data" class="nav-link active" data-scroll-target="#source-of-data">Source of Data</a></li>
+  <li><a href="#how-to-download-yourself" id="toc-how-to-download-yourself" class="nav-link" data-scroll-target="#how-to-download-yourself">How to Download Yourself</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lexical Similarities Between Different Branches of Indo-European</h1>
+<h1 class="title">Sources</h1>
 </div>
 
 
@@ -136,17 +143,35 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="cell" data-messages="false">
+<section id="source-of-data" class="level2">
+<h2 class="anchored" data-anchor-id="source-of-data">Source of Data</h2>
+<p>Dyen, I., Kruskal, J., and Black, P. (1992). An indoeuropean classification: A lexicostatistical experiment. Transactions of the American Philosophical Society. 82, (5).</p>
+</section>
+<section id="how-to-download-yourself" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-download-yourself">How to Download Yourself</h2>
+<p>You can download Dyen, Kruskal and Black’s (1992) dataset from github user jorgeklz’s public mstknnclust repository. Here’s how you can access the data to work with it yourself:</p>
+<ol type="1">
+<li><p>&gt; install.packages(“devtools”)</p></li>
+<li><p>&gt; library(usethis)</p></li>
+<li><p>&gt; library(devtools)</p></li>
+<li><p>&gt; install_github(“jorgeklz/mstknnclust”)</p>
+<ol type="1">
+<li>Note: If this doesn't work then look around on Github for other versions of mstknnclust</li>
+</ol></li>
+<li><p>&gt; library(mstknnclust)</p></li>
+<li><p>&gt; data(“dslanguages”)</p></li>
+<li><p>&gt; dslanguages</p>
+<ol type="1">
+<li>Running this should give you names of languages and numbers (in decimal form) representing their lexical similarity (how similar their words are to each other)</li>
+</ol></li>
+<li><p>&gt; view(dslanguages)</p>
+<ol type="1">
+<li>This will create a window in the top left of RStudio that lets you see all the data at once, letting you know if you have downloaded it correctly.</li>
+</ol></li>
+</ol>
 
-</div>
-<div class="cell" data-messages="false">
-<div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<p>This chart shows how similar the vocabularies of different branches of the Indo-European language family are. The data is taken from fron Dyen et al.’s (1992) matrix of the lexical distances between Indo-European languages. My chart groups those languages according to genetic branches and calculates the average similarities between the different languages of these larger groups. European branches are generally more similar to each other than they are to Asian branches, despite being no more closely related.</p>
 
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

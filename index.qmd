@@ -1,5 +1,5 @@
 ---
-title: "Lexical similarities between different branches of Indo-European"
+title: "Lexical Similarities Between Different Branches of Indo-European"
 ---
 ```{r}
 #| echo: false
@@ -17,6 +17,9 @@ data("dslanguages")
 #| echo: false
 #| messages: false
 
+##This code is found on other docs, but it renders more efficiently when it's laid out here.
+
+##First I grouped the languages according to branches, as my goal is primarily to compare the different branches.
 
 celtic <- dslanguages |>
   select(IrishA, IrishB, WelshN, WelshC, 
@@ -49,20 +52,26 @@ iranic <- dslanguages |>
 albanian <- dslanguages |>
   select(AlbanianT:AlbanianC)
 
+##Then I created a "branch" variable.  select() didn't work, so I used list()
+
 branch <- list(celtic, romance, germanic, balto_slavic, indic,
                greek, armenian, iranic, albanian)
 
+##These are necessary to get the various branches (not the branch variable!) to have numerical values we can compare.
+
 row_sums <- lapply(branch, rowSums)
 row_sums_matrix <- do.call(cbind, row_sums)
+
+##The next two lines set up the correlational variable and give the colums appropriate names.
 M <- cor(row_sums_matrix)
 colnames(M) <- rownames(M) <- c("Celtic", "Romance", 
                                 "Germanic", "Balto-Slavic", "Indic",
                                 "Greek", "Armenian", "Iranic", "Albanian")
+
+##This actually creates to the plot.  is.corr MUST equal FALSE to get the coloring right.
 corrplot(M, method = 'color', is.corr = FALSE)
 
 
 ```
-Source: Dyen, I., Kruskal, J., and Black, P. (1992). An indoeuropean classification: A lexicostatistical experiment. Transactions of the American Philosophical Society. 82, (5).
 
-
-This matrix shows the lexical similarities between different branches of Indo-European. The data is taken from fron Dyen and Black 1992's matrix of lexical distance between Indo-European languages.  My chart groups those languages according to branches and calculates the similarities between different those larger groupings. European branches are generally similar to each other and dissimilar to Asian branches, even though they are not always more closely related.
+This chart shows how similar the vocabularies of different branches of the Indo-European language family are. The data is taken from fron Dyen et al.'s (1992) matrix of the lexical distances between Indo-European languages.  My chart groups those languages according to genetic branches and calculates the average similarities between the different languages of these larger groups. European branches are generally more similar to each other than they are to Asian branches, despite being no more closely related.

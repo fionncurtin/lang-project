@@ -1,24 +1,38 @@
 [
   {
+    "objectID": "Germanic vs. Romance.html",
+    "href": "Germanic vs. Romance.html",
+    "title": "Germanic vs. Romance",
+    "section": "",
+    "text": "You can see from the bar on the right that there is much less variation between these two branches than there was between all of the branches on the first graph. I was surprised that English wasn’t especially similar to French (everyone’s seen a Youtube video about the Norman influence on the English language by now). The two French creole languages are actually only one language, Dominican creole (from the island of Dominica, not the Dominican Republic) which are represented by two different word sets taken from two different authors; that the two are basically identical is good proof that I haven’t messed anything up. The dialects of Sardinian match less than I would have expected, while the creole languages (formed from a mix of several languages in colonial settings) have close affinities with everything.\nIcelandic, which has changed little since the days of the sagas, has borrowed relatively little from the Latin-derived tongues.\nNote that Pennsylvania Dutch is a dialect of German spoken in parts of the eastern and central United States. Riksmal is a written form of Norwegian, but not a dialect in itself."
+  },
+  {
+    "objectID": "Celtic vs. Indic.html",
+    "href": "Celtic vs. Indic.html",
+    "title": "Celtic vs. Indic",
+    "section": "",
+    "text": "I wanted to compare Celtic and Indic because they are the two most distant branches, at least in geographic terms. The results are pretty strange; I would have expected a relatively close affinity between Romani and any group of European languages because, although Indic, it has been spoken in Europe by the Romani people for centuries. But why the strong links across the board to one Nepali wordset but not the other? The restriction in range to a fairly narrow window of mild dissimilarity might render the data less useful.\nNote that when a language is followed by a surname it is in reference to a specific wordset, typically to distinguish it from a different wordset of the same language. The wordsets may be from the same dialect or different dialects."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Lexical similarities between different branches of Indo-European",
+    "title": "Lexical Similarities Between Different Branches of Indo-European",
     "section": "",
-    "text": "Source: Dyen, I., Kruskal, J., and Black, P. (1992). An indoeuropean classification: A lexicostatistical experiment. Transactions of the American Philosophical Society. 82, (5).\nThis matrix shows the lexical similarities between different branches of Indo-European. The data is taken from fron Dyen and Black 1992’s matrix of lexical distance between Indo-European languages. My chart groups those languages according to branches and calculates the similarities between different those larger groupings. European branches are generally similar to each other and dissimilar to Asian branches, even though they are not always more closely related."
+    "text": "This chart shows how similar the vocabularies of different branches of the Indo-European language family are. The data is taken from fron Dyen et al.’s (1992) matrix of the lexical distances between Indo-European languages. My chart groups those languages according to genetic branches and calculates the average similarities between the different languages of these larger groups. European branches are generally more similar to each other than they are to Asian branches, despite being no more closely related."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This project compares the lexical similarities between different branches of the Indo-Euroepean language family, the largest such family in the world.\nThis does not mean categorizing branches are in a genetic sense, as linguists typically do, but instead just looking at how similar the Swdesh (universal) words are between the different branches."
+    "text": "This project compares the lexical similarities between different branches of the Indo-European language family, the largest such family in the world.\nThis does not mean categorizing branches in a genetic sense, which linguist are typically most interested in, but instead looking at how similar the Swadesh words (universal words like “face” and “water”) are between the different branches. Close cultural contact between the European languages has led them to have a relative affinity for each other; Greek is as closely related to to Indic languages like Hindi as it is to Germanic languages like English, but borrowing has led the two languages to share much more vocabulary. The same can be said of Albanian and Balto-Slavic (Albanian-speaking lands in Europe are surrounded on three sides by Slavic-speaking countries), but its intriguing dissimilarity to the other European languages suggests a degree of cultural isolation. If two languages are equidistant in phylogenetic sense then the lexical similarity between them will be mediated by cultural contact.\nThe interbranch comparison on the home page came out well, but some of the more granular comparisons I made suffered from range restriction. The closer the branches or languages are the more sampling errors will skew the results."
   },
   {
     "objectID": "about.html#about-me",
     "href": "about.html#about-me",
     "title": "About",
     "section": "About Me:",
-    "text": "About Me:\nI am a novice data scientist working with R to apply statistics to the humanities. You can reach me at dermot.curtin1010@gmail.com and find my code here:\nhttps://github.com/fionncurtin/lang-project https://github.com/fionncurtin"
+    "text": "About Me:\nMy name is Dermot Curtin and I am a novice programmer working with R to apply data science to the humanities. You can reach me at dermot.curtin1010@gmail.com and find my code here:\nhttps://github.com/fionncurtin/lang-project"
   },
   {
     "objectID": "about.html#check-out",
@@ -26,5 +40,26 @@
     "title": "About",
     "section": "Check out",
     "text": "Check out\nKane’s Free Data Science Bootcamp, where I acquired the skills to make this project."
+  },
+  {
+    "objectID": "Source.html",
+    "href": "Source.html",
+    "title": "Sources",
+    "section": "",
+    "text": "Dyen, I., Kruskal, J., and Black, P. (1992). An indoeuropean classification: A lexicostatistical experiment. Transactions of the American Philosophical Society. 82, (5)."
+  },
+  {
+    "objectID": "Source.html#how-to-download-yourself",
+    "href": "Source.html#how-to-download-yourself",
+    "title": "Sources",
+    "section": "How to Download Yourself",
+    "text": "How to Download Yourself\nYou can download Dyen, Kruskal and Black’s (1992) dataset from github user jorgeklz’s public mstknnclust repository. Here’s how you can access the data to work with it yourself:\n\n> install.packages(“devtools”)\n> library(usethis)\n> library(devtools)\n> install_github(“jorgeklz/mstknnclust”)\n\nNote: If this doesn't work then look around on Github for other versions of mstknnclust\n\n> library(mstknnclust)\n> data(“dslanguages”)\n> dslanguages\n\nRunning this should give you names of languages and numbers (in decimal form) representing their lexical similarity (how similar their words are to each other)\n\n> view(dslanguages)\n\nThis will create a window in the top left of RStudio that lets you see all the data at once, letting you know if you have downloaded it correctly."
+  },
+  {
+    "objectID": "Balto-Slavic.html",
+    "href": "Balto-Slavic.html",
+    "title": "Balto-Slavic",
+    "section": "",
+    "text": "This is an internal comparison of the Balto-Slavic branch, and probably the most politically fraught of the bunch. “Serbo-Croatian” represents all of the dialects spoken in the former Yugoslavia, which are mutually intelligible (the usual test of whether two dialects form a single language) but which the region’s governments insist are actually separate Serbian, Bosnian, Croatian, and Montenegrin languages. Some Lithuanians and Latvians may resent being grouped in with the Slavic languages, associated particularly with Pan-Slavist heimat and former occupier Russia, but the linguistic case is closed here. Note that Polish and Slovene are just as Slavic as Russian is.\nThe languages are all very similar to each other as you can see on the bar to the right of the chart, but Latvian stands out as the most distinct. This is almost certainly because Balto-Slavic is divided into two sub-branches, Baltic and Slavic, with Latvian the only representative of the former in this dataset. Other than this the range is so restricted that I don’t think the data can provide many insights."
   }
 ]
